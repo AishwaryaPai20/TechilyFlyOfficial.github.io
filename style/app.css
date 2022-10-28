@@ -1,0 +1,492 @@
+@font-face {
+  font-family: 'OratorStd';
+  src: url('../fonts/OratorStd.otf');
+}
+
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #111;
+  margin:0;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-color: #001634;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  margin: 0px 0 0 0;
+  position: absolute;
+  top: 55%;
+  text-align: center;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.message {
+  color: #ffffff;
+}
+
+.coming-soon {
+  opacity: 0.9;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'OratorStd';
+}
+
+#article {
+  display: block;
+  text-align: center;
+  width: 650px;
+  margin: 0 auto;
+}
+
+#article a {
+  color: #ffffff;
+}
+
+.thank-you {
+  margin-top: 100px;
+  opacity: 0.9;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'OratorStd';
+}
+
+.social-media {
+  margin: 100px 0 10px 0;
+  color: #fff;
+  margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sm-icon-insta {
+  margin-right: 15px;
+  width: 32px;
+}
+
+.sm-icon-youtube {
+  margin-right: 15px;
+  width: 32px;
+}
+
+.sm-icon-linkedin {
+  width: 32px;
+}
+
+.email-form {
+  margin: 120px auto 0 auto;
+  width:100%;
+}
+
+input,
+span,p,
+label{
+  color:#fff;
+  font-family: sans-serif;
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  font-size: 22px;
+  text-align: center;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+/* Question */
+
+input.question {
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
+}
+/* Underline and Placeholder */
+
+input.question + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 33%;
+  border-top: 1px solid red;
+  -webkit-transition: width 0.4s ease, left 0.4s ease;
+  transition: width 0.4s ease, left 0.4s ease;
+  height: 0px;
+  left: 33%;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+
+
+input.question:focus + label {
+  width: 70%;
+  left: 14%;
+}
+
+input.question:focus,
+input.question:valid {
+  padding-top: 35px;
+}
+
+input.question:focus + label > p,
+input.question:valid + label > p {
+  top: -60px;
+  font-size: 14px;
+  color: #fff;
+}
+
+input.question:invalid + label > p {
+  top: -60px;
+  font-size: 14px;
+  color: #fff;
+}
+
+input.question:placeholder-shown + label>p {
+  top: -30px;
+  font-size: 18px;
+  color: #fff;
+}
+
+input.question:focus:placeholder-shown + label>p {
+  top: -60px;
+  font-size: 14px;
+  color: #fff;
+}
+
+
+
+input.question:valid + label,
+textarea.question:valid + label {
+  border-color: green;
+}
+
+input.question:invalid{
+  box-shadow: none;
+}
+
+input.question + label > p {
+  padding:0;
+  opacity: 0.9;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  color: #fff;
+  font-size: 18px;
+  top: -30px;
+  z-index: -1;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+input[type="submit"] {
+  -webkit-transition: opacity 0.2s ease, background 0.2s ease;
+  -moz-transition: opacity 0.2s ease, background 0.2s ease;
+  -o-transition: opacity 0.2s ease, background 0.2s ease;
+  -ms-transition: opacity 0.2s ease, background 0.2s ease;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  display: block;
+  opacity: 0.7;
+  margin: 10px 0 0 0;
+  padding: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #4fb8b9;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background: #797979;
+  color: #9b9b9b;
+  border: 1px solid #797979;
+}
+
+input[type="submit"]:active {
+  background: #797979;
+}
+
+input.question:valid ~ .submit-btn > input[type="submit"], textarea.question:valid ~ input[type="submit"] {
+  -webkit-animation: appear 1s forwards;
+  -moz-animation: appear 1s forwards;
+  -o-animation: appear 1s forwards;
+  -ms-animation: appear 1s forwards;
+  animation: appear 1s forwards;
+  background-color: #4fb8b9;
+  border: 1px solid #4fb8b9;
+  color: #fff;
+}
+
+input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input[type="submit"] {
+  background-color: transparent;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+
+#container {
+  width: 100%;
+  margin: 35px auto;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+  font-family: 'Press Start 2P';
+  font-weight: 400;
+  /*Create overlap*/
+
+  margin: 0;
+  line-height: 0;
+  /*Animation*/
+
+  animation: glitch1 2.5s infinite;
+}
+
+h1:nth-child(2) {
+  color: #67f3da;
+  animation: glitch2 2.5s infinite;
+}
+
+h1:nth-child(3) {
+  color: #f16f6f;
+  animation: glitch3 2.5s infinite;
+}
+/*Keyframes*/
+
+@keyframes glitch1 {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  7% {
+    transform: skew(-0.5deg, -0.9deg);
+    opacity: 0.75;
+  }
+  10% {
+    transform: none;
+    opacity: 1;
+  }
+  27% {
+    transform: none;
+    opacity: 1;
+  }
+  30% {
+    transform: skew(0.8deg, -0.1deg);
+    opacity: 0.75;
+  }
+  35% {
+    transform: none;
+    opacity: 1;
+  }
+  52% {
+    transform: none;
+    opacity: 1;
+  }
+  55% {
+    transform: skew(-1deg, 0.2deg);
+    opacity: 0.75;
+  }
+  50% {
+    transform: none;
+    opacity: 1;
+  }
+  72% {
+    transform: none;
+    opacity: 1;
+  }
+  75% {
+    transform: skew(0.4deg, 1deg);
+    opacity: 0.75;
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes glitch2 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  7% {
+    transform: translate(-2px, -3px);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 0.25;
+  }
+  27% {
+    transform: none;
+    opacity: 0.25;
+  }
+  30% {
+    transform: translate(-5px, -2px);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 0.25;
+  }
+  52% {
+    transform: none;
+    opacity: 0.25;
+  }
+  55% {
+    transform: translate(-5px, -1px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 0.25;
+  }
+  72% {
+    transform: none;
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(-2px, -6px);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.25;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
+}
+
+@keyframes glitch3 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  7% {
+    transform: translate(2px, 3px);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 0.25;
+  }
+  27% {
+    transform: none;
+    opacity: 0.25;
+  }
+  30% {
+    transform: translate(5px, 2px);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 0.25;
+  }
+  52% {
+    transform: none;
+    opacity: 0.25;
+  }
+  55% {
+    transform: translate(5px, 1px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 0.25;
+  }
+  72% {
+    transform: none;
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(2px, 6px);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.25;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
+}
+
+
+@media (max-width:350px) {
+  .social-media {
+    margin-top: 50px;
+  }
+  .email-form {
+    margin-top: 60px;
+  }
+}
+
