@@ -1,0 +1,7 @@
+User-agent: *
+
+Crawl-delay: 10
+
+Disallow:
+
+Sitemap: https://techilyfly.com/sitemap_index.xml

@@ -1,145 +1,829 @@
-<!--
-██╗  ██╗███████╗██╗     ██╗      ██████╗     ██╗    ██╗ ██████╗ ██████╗ ██╗     ██████╗
-██║  ██║██╔════╝██║     ██║     ██╔═══██╗    ██║    ██║██╔═══██╗██╔══██╗██║     ██╔══██╗
-███████║█████╗  ██║     ██║     ██║   ██║    ██║ █╗ ██║██║   ██║██████╔╝██║     ██║  ██║
-██╔══██║██╔══╝  ██║     ██║     ██║   ██║    ██║███╗██║██║   ██║██╔══██╗██║     ██║  ██║
-██║  ██║███████╗███████╗███████╗╚██████╔╝    ╚███╔███╔╝╚██████╔╝██║  ██║███████╗██████╔╝
-╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝      ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═════╝
-
-Hey Geek,
-
-If you're interested in working with us, please reach out to me at techilyfly@gmail.com
-
-Cheers,
-Techily Fly Team ❤️
-
--->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Techily Fly is an initiative to empower Computer Science/IT Software Engineering/Development community. Our aim is to provide optimum resources like Top Interview Questions/Experience to candidates for Interviews to get them good JOB offer from MAANG companies like Meta, Apple, Amazon, Netflix, Google, Microsoft, Bloomberg, Oracle, VMWare, Booking.com to name a few.">
+  <title>Techily Fly - Website Development Agency</title>
 
-  <meta name="keywords"
-    content="techily fly, abdurrahman g, software engineering hiring,software engineering interview,software engineering interview questions,freelance software developer,software developer interview questions,sdet interview questions,qa engineer interview questions,software interview questions,amazon sde interview questions,amazon interview questions software engineer,software engineering viva questions,senior software engineer interview questions,software engineering questions,software development interview questions,good interview questions to ask a software developer,google software engineer interview,site reliability engineer interview questions,amazon sde 2 interview,entry level software engineer interview questions,amazon sde online assessment">
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="techily-fly-favicon-512x512.png" type="image/svg+xml">
 
-  <meta property="og:image" content="images/techily-fly-logo-small-circle.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1032">
-  <meta property="og:image:height" content="420">
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://techilyfly.com/" />
-  <meta property="og:title" content="Techily Fly - Software Development">
-  <meta property="og:description"
-    content="TechilyFly is an initiative to empower Computer Science/IT Software Engineering/Development community." />
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PFRCRP4');</script>
-  <!-- End Google Tag Manager -->
-
-  <title>Techily Fly</title>
-
-  <link rel="icon" type="image/png" sizes="16x16" href="images/techily-fly-logo-small-circle.png">
-
-  <link rel="stylesheet" href="style/app.css">
-  <script src="js/jquery.min.js"></script>
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap"
+    rel="stylesheet">
 </head>
 
-<body>
-  <div id="particles-js">
-    <div class="parent">
-      <div class="child">
-        <div>
-          <a href="https://techilyfly.com" title="Techily Fly"><img style="width: 85px;" src="images/small-icon.png"></a>
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="/">
+        <h1 class="logo">Techily Fly</h1>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="/" class="logo">Techily Fly</a>
+
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
         </div>
-        <div class="logo">
-          <a href="https://techilyfly.com" title="Techily Fly"><img src="images/small-typeface.png"></a>
-        </div>
-        <div>
-          <div id="container">
-            <h1 class="coming-soon">LAUNCHING SOON</h1>
-            <h1 class="coming-soon">LAUNCHING SOON</h1>
-            <h1 class="coming-soon">LAUNCHING SOON</h1>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="/" class="navbar-link" data-navbar-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about/index.html" class="navbar-link" data-navbar-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="services/index.html" class="navbar-link" data-navbar-link>Services</a>
+          </li>
+          <li class="navbar-item">
+            <a href="speciallization/index.html" class="navbar-link" data-navbar-link>Speciallization</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#features" class="navbar-link" data-navbar-link>Features</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-navbar-link>Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact/index.html" class="navbar-link" data-navbar-link>Contact Us</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="https://calendly.com/techilyfly" class="btn" target="_blank">
+        <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+
+        <span>Get A Quote</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">We Are Product Designer & Developer From India</p>
+
+            <h2 class="h2 hero-title">Web-based Services</h2>
+
+            <p class="hero-text">
+              for Your Ideas, Business Processes & to Sell And Market Online. <br>
+              We create effective websites & online strategies to build meaningful connections between business and
+              audience.
+            </p>
+
+            <a href="about/index.html"><button class="btn">Learn More</button></a>
+
           </div>
-        </div>
-        <!-- <div class="email-form">
-          <input type="email" name="name" class="question" id="nme" required autocomplete="off" placeholder=" "
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-          <label for="nme">
-            <p>Your email ID</p>
-          </label>
-          <div class="submit-btn"><input type="submit" id="submitBtn" value="Notify Me" /></div>
 
-        </div> -->
-        <!-- <div>
-          <span class="thank-you">WE'LL GET BACK TO YOU SOON!<br /> <br />FOLLOW US ON OUR SOCIAL MEDIA FOR LATEST BYTES
-            👇🏻</span>
-        </div> -->
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="694" height="529" loading="lazy" alt="hero-banner"
+              class="w-100 banner-animation">
+          </figure>
 
-        <div class="message">
-          <h2>Our site is getting a little tune up and some love.</h2>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="700" height="532" loading="lazy" alt="about banner"
+              class="w-100 banner-animation">
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title underline">Why Our Agency</h2>
+
+            <p class="about-text">
+              In dictum aliquam turpis lacinia iaculis. Fusce vel malesuada magna. Nulla vel maximus risus. Donec
+              volutpat metus
+              lacinia risus accumsan, ac bibendum libero efficitur. Pellentesque nec nisi sit amet magna tempus
+              hendrerit ut a odio.
+            </p>
+
+            <p class="about-text">
+              Praesent rhoncus commodo tortor, id pulvinar nisl blandit at. Nulla facilisi. Quisque turpis ante,
+              vehicula condimentum
+              arcu.
+            </p>
+
+            <ul class="stats-list">
+
+              <li class="stats-card">
+                <p class="h3 stats-title">9875</p>
+
+                <p class="stats-text">Satisfied Clients</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">7894</p>
+
+                <p class="stats-text">Project Lunched</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">65</p>
+
+                <p class="stats-text">Years Completed</p>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="services">
+        <div class="container">
+
+          <h2 class="h2 section-title underline">Our Speciallization</h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="telescope-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title">Strategy & Research</h3>
+
+                <p class="text">
+                  Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus
+                  suscipit, enim ex
+                  venenatis ipsum, et porttitor.
+                </p>
+
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="desktop-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title">Web Development</h3>
+
+                <p class="text">
+                  Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus
+                  suscipit, enim ex
+                  venenatis ipsum, et porttitor.
+                </p>
+
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="globe-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title">Web Solution</h3>
+
+                <p class="text">
+                  Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus
+                  suscipit, enim ex
+                  venenatis ipsum, et porttitor.
+                </p>
+
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features" id="features">
+        <div class="container">
+
+          <h2 class="h2 section-title underline">Our Features</h2>
+
+          <ul class="features-list">
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="bulb-outline"></ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">Idea & Analysis</h3>
+
+                  <p class="text">
+                    Praesent tincidunt congue est ut hendrerit. Pellentesque et eros sit amet ipsum venenatis.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">Designing</h3>
+
+                  <p class="text">
+                    Praesent tincidunt congue est ut hendrerit. Pellentesque et eros sit amet ipsum venenatis.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <figure class="features-banner">
+            <img src="./assets/images/feautres-banner.png" width="369" height="318" loading="lazy" alt="Features Banner"
+              class="w-100 banner-animation">
+          </figure>
+
+          <ul class="features-list">
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">Development</h3>
+
+                  <p class="text">
+                    Praesent tincidunt congue est ut hendrerit. Pellentesque et eros sit amet ipsum venenatis.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">Testing & Lunching</h3>
+
+                  <p class="text">
+                    Praesent tincidunt congue est ut hendrerit. Pellentesque et eros sit amet ipsum venenatis.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog">
+        <div class="container">
+
+          <h2 class="h2 section-title underline">Our Blog & News</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-1.jpg" width="750" height="350" loading="lazy"
+                      alt="Vestibulum massa arcu, consectetu pellentesque scelerisque." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title">
+                    <a href="#">
+                      Vestibulum massa arcu, consectetu pellentesque scelerisque.
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
+                    imperdiet.
+                  </p>
+
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">7 March, 2022</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-2.jpg" width="750" height="350" loading="lazy"
+                      alt="Quisque egestas iaculis felis eget placerat ut pulvinar mi." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title">
+                    <a href="#">
+                      Quisque egestas iaculis felis eget placerat ut pulvinar mi.
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
+                    imperdiet.
+                  </p>
+
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">7 March, 2022</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-3.jpg" width="750" height="350" loading="lazy"
+                      alt="Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title">
+                    <a href="#">
+                      Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere.
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
+                    imperdiet.
+                  </p>
+
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">7 March, 2022</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-4.jpg" width="750" height="350" loading="lazy"
+                      alt="Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title">
+                    <a href="#">
+                      Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis.
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac
+                    imperdiet.
+                  </p>
+
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">7 March, 2022</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Techily Fly</a>
+
+          <p class="text">
+            We Discuss, We Understand, We Help to Grow your Business through our Services.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.youtube.com/@TechilyFly" class="social-link" target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/TechilyFly" class="social-link" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/TechilyFly" class="social-link" target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/TechilyFly" class="social-link" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/TechilyFly" class="social-link" target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://linktr.ee/TechilyFly" class="social-link" target="_blank">
+                <ion-icon name="globe-outline"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
         </div>
 
-        <div id="article">
-          <p>We apologize for the inconvenience, but we're performing some maintenance. <br><br> You can still contact us at <a
-              href="mailto:techilyfly@gmail.com">techilyfly@gmail.com</a> <br><br> We'll be back up soon!</p>
-              
-          <p>&mdash; Coding is Love</p>
-        </div>
+        <ul class="footer-list">
 
-        <div>
-          <p>Follow us on our <q>social media</q> for <strong>latest bytes</strong></p>
-          <p>👇🏻👇🏻👇🏻</p>
-        </div>
-        
-        <div class="social-media">
-          <a href="https://www.instagram.com/TechilyFly" target="_blank">
-            <img class="sm-icon-insta" src="images/techilyfly-instagram.svg">
-          </a>
-          <a href="https://www.youtube.com/channel/UCm_QTeTbsZ-eBbBqg9v2CvQ" target="_blank">
-            <img class="sm-icon-youtube" src="images/techilyfly-youtube.svg">
-          </a>
-          <a href="https://www.linkedin.com/company/TechilyFly" target="_blank">
-            <img class="sm-icon-linkedin" src="images/techilyfly-linkedin.svg">
-          </a>
-        </div>
+          <li>
+            <p class="footer-list-title">Our links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Team</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Blog</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Our Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Strategy & Research</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Web Development</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Web Solution</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Digital Marketing</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">App Design</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Other links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Support</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="call"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:+918825164657" class="footer-item-link">+918825164657</a>
+            </div>
+
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:techilyfly@gmail.com" class="footer-item-link">techilyfly@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="location"></ion-icon>
+            </div>
+
+            <address class="footer-item-link">
+              <a href="https://goo.gl/maps/Y3zvfJPDUBRyyyGa9" target="_blank">Lahsaniya, East Champaran, Bihar,
+                India</a>
+            </address>
+
+          </li>
+
+        </ul>
+
       </div>
     </div>
 
-  </div>
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2022 <a href="https://techilyfly.com" class="copyright-link">TechilyFly</a>. All Right Reserved
+      </p>
+    </div>
 
-  <script src="js/particles.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/index.js"></script>
-  <script type="text/javascript">
-    var sc_project = 12455698;
-    var sc_invisible = 1;
-    var sc_security = "63befa04";
-  </script>
-  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
-  <noscript>
-    <div class="statcounter"><a title="Web Analytics
-  Made Easy - StatCounter" href="https://statcounter.com/" target="_blank"><img class="statcounter"
-          src="https://c.statcounter.com/12455698/0/63befa04/1/" alt="Web Analytics Made Easy -
-  StatCounter"></a></div>
-  </noscript>
+  </footer>
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFRCRP4" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
